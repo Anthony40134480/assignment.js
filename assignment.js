@@ -41,3 +41,17 @@ console.log('total wood need:', totalWood);
 
 
 
+function tinyFriend(arguments){
+    var arguments = ['ricky', 'bithy', 'jack', 'swarna', 'shujit', ' barna'];
+    var shortestWord = arguments[0];
+    for (var i = 1; i < arguments.length; i++) {
+      if (arguments[i].length < shortestWord.length) {
+        shortestWord = arguments[i];
+      }
+    }
+    return shortestWord;
+  }
+  var output = tinyFriend(arguments);
+  console.log(output);
+
+
